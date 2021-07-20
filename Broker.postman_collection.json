@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "48977768-1c72-4ec5-b2ed-c9b246235801",
+		"name": "Broker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaIngreso\": \"2021-07-19\",\r\n    \"fechaSalida\": \"2021-07-30\",\r\n    \"totalDias\": 10,\r\n    \"numeroPersonas\": 5,\r\n    \"titularReserva\": \"Bad Name\",\r\n    \"numeroHabitaciones\": 2,\r\n    \"numeroMenores\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/reserva/registrar-reserva",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"reserva",
+						"registrar-reserva"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
